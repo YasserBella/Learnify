@@ -28,3 +28,10 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 });
+
+
+const client = new Client();
+
+client
+    .setEndpoint('https://cloud.appwrite.io/v1')
+    .setProject('66986f7f00392f100da2');
