@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learnify - Our Books</title>
+    <link rel="stylesheet" href="books.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="logo.svg" alt="Learnify Logo">
+                <h1>Learnify</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="books.html">Our Books</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+                <div class="auth-buttons">
+                    <a href="login.html" class="btn">Log In</a>
+                    <a href="signup.html" class="btn">Sign Up</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="search-filter">
+            <h2 class="search-title">Search for Books</h2>
+            <input type="text" id="search-bar" placeholder="Search...">
+            <div class="filters">
+                <label for="sort-by">Sort by:</label>
+                <select id="sort-by">
+                    <option value="price-asc">Price: Low to High</option>
+                    <option value="price-desc">Price: High to Low</option>
+                    <option value="rating">Rating</option>
+                </select>
+                <label for="filter-by">Filter by:</label>
+                <select id="filter-by">
+                    <option value="frontend">Frontend</option>
+                    <option value="backend">Backend</option>
+                    <option value="fullstack">Full Stack</option>
+                    <option value="datascience">Data Science</option>
+                </select>
+            </div>
+        </div>
+
+        <section class="feed">
+            <div class="book-cards">
+                <div class="book-card">
+                    <img src="javascriptbook.png" alt="JavaScript Course">
+                    <div class="book-info">
+                        <h3>JavaScript Course</h3>
+                        <p class="description">Learn to build interactive web apps and solve coding problems quickly.</p>
+                        <a href="buy.html?book=javascript" class="btn buy-btn">$9.99</a>
+                    </div>
+                </div>
+                <div class="book-card">
+                    <img src="pythonbook.png" alt="Python Course">
+                    <div class="book-info">
+                        <h3>Python Course</h3>
+                        <p class="description">Quickly master Python to build and solve real-world problems.</p>
+                        <a href="buy.html?book=python" class="btn buy-btn">$4.99</a>
+                    </div>
+                </div>
+                <!-- Add more books as needed -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section contact-info">
+                <h4>Contact Information</h4>
+                <a href="#" target="_blank">
+                    <img src="instagram.svg" alt="Instagram" class="social-icon">
+                </a>
+            </div>
+            <div class="footer-section quick-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="books.html">Our Books</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-section copyright">
+                <p>&copy; 2024 Learnify. All rights reserved. Made by Yasser Bella</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="books.js"></script>
+</body>
+</html>
